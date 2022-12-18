@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IQueryable<IdentityUser>
+@{
+    Layout = "_Layout";
+}
+@foreach (var p in Model)
+{
+<div class="card card-outline-primary m-1 p-1">
+    <div class="bg-faded p-1">
+        <h4 class="text-primary">Name: @p.UserName Email: @p.Email</h4>\
+            <h4 class="text-primary">NormalizedName: @p.NormalizedUserName NormalizedEmail: @p.NormalizedEmail</h4>
+            <p>PhoneNumber: @p.PhoneNumber</p>
+        <p>@p.PasswordHash</p>
+    </div>
+</div>
+}

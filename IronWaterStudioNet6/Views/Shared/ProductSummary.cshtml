@@ -1,0 +1,22 @@
+﻿@model Product
+
+<div class="card card-outline-primary m-1 p-1">
+    <div class="bg-faded p-1">
+        <h4 class="text-primary">(ID: @Model.ProductID) Name: @Model.Name</h4>
+        <p>Price: @Model.Price.ToString("c")</p>
+        <div class="row col-2 justify-content-between">
+            <div class="col-md-2">
+                <a asp-action="Edit" asp-route-productId="@Model.ProductID"
+                   class="btn btn-warning btn-sm">
+                    Edit
+                </a>
+            </div>
+            <div class="col-md-2">
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" name="ProductID" value="@Model.ProductID" />
+                    <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

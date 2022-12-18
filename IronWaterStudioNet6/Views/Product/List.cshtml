@@ -1,0 +1,22 @@
+﻿@using IronWaterStudioNet6.Models.ViewModels
+@model ProductsListViewModel
+@{
+    Layout = "_Layout";
+}
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-success">@TempData["message"]</div>
+}
+<div class="text-center">
+    <a asp-action="Create" class="btn btn-primary btn-lg">Add product</a>
+</div>
+@foreach (var p in Model.products)
+{
+    @Html.Partial("ProductSummary", p)
+}
+
+<div page-model="@Model.pagingInfo" page-action="List" page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-secondary"
+     page-class-selected="btn-primary"
+     class="btn-group pull-right m-1" style="width:auto">
+</div>
