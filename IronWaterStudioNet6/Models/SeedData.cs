@@ -20,6 +20,12 @@ namespace IronWaterStudioNet6.Models
                 },
                 new Product
                 {
+                    Name = "iPhone 12 Blue",
+                    Description = "Apple IPhone 12, 256 Gb ",
+                    Price = 74990m
+                },
+                new Product
+                {
                     Name = "iPhone 12 White",
                     Description = "Apple IPhone 12, 128 Gb",
                     Price = 62990m
@@ -39,6 +45,12 @@ namespace IronWaterStudioNet6.Models
                 new Product
                 {
                     Name = "iPhone 14 Pro Black",
+                    Description = "Apple IPhone 14 Pro, 128 Gb",
+                    Price = 114990m
+                },
+                new Product
+                {
+                    Name = "iPhone 14 Pro Green",
                     Description = "Apple IPhone 14 Pro, 128 Gb",
                     Price = 114990m
                 }

@@ -17,6 +17,10 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="navbar-collapse collapse d-sm-inline-flex flex-sm-row text-decoration-none text-dark"
+                    asp-controller="Home" asp-action="Developer">
+                    Developer
+                </a>
                 <partial name="_LoginPartial" />
             </div>
         </nav>
@@ -29,7 +33,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - IronWaterStudioNet6 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - IronWaterStudioNet6
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
